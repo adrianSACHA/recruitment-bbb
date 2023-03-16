@@ -21,7 +21,7 @@ export const Input = styled.input`
   border-radius: 5px;
 
   &:required {
-    border-color: red;
+    border-color: ${({ theme }) => theme.color.borderOnInput};
   }
 `;
 
