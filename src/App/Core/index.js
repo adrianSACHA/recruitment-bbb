@@ -14,7 +14,7 @@ function App() {
         <ThemeProvider theme={theme}>
             <Normalize/>
             <GlobalStyle/>
-            <Router>
+            <Router basename="/recruitment-bbb">
                 <Navigation/>
                 <Routes>
                     <Route path={toList} element={<List/>}/>
