@@ -29,7 +29,7 @@ export const StyledListItem = styled.li`
             margin: 5px;
           `} 
   
-  @media(max-width: ${({theme}) => theme.breakpoint.s}px) {
+  @media (max-width: ${({theme}) => theme.breakpoint.s}px) {
     display: grid;
     grid-template-columns: 0.5fr 1fr 1fr;
     grid-auto-flow: dense;
