@@ -13,11 +13,11 @@ export const GlobalStyle = createGlobalStyle`
 
   #root {
     font-family: 'Lato', sans-serif;
-    background-color: #282c34;
-    font-size: 12px !important;
-    color: whitesmoke;
+    background-color: ${({theme}) => theme.color.mainBackgroundColor};
+    font-size: 12px;
+    color: ${({theme}) => theme.color.navigationText};
     min-height: 100vh;
-   padding-bottom: 60px;
+    padding-bottom: 60px;
     justify-content: center;
   }
 `;
