@@ -2,7 +2,7 @@ import React, {useState, useEffect, useRef} from 'react';
 import {toList} from "../../Core/routes";
 import {useNavigate} from "react-router-dom";
 import axios from "axios";
-import {MainWrapper, Wrapper} from "../../common/Wrapper/styled";
+import {MainWrapper, Wrapper} from "../../common/Wrapper";
 import {ButtonWrapper, Form, Input, Label} from "./styled";
 import {StyledButton} from "../../common/Button";
 
@@ -33,7 +33,8 @@ export default function Update() {
         })
     }
 
-    return (<MainWrapper>
+    return (
+        <MainWrapper>
             <Wrapper>
                 <Form onSubmit={onFormSubmit}>
                     <Label>First Name</Label>
@@ -53,5 +54,6 @@ export default function Update() {
                     </ButtonWrapper>
                 </Form>
             </Wrapper>
-        </MainWrapper>)
+        </MainWrapper>
+    )
 }
