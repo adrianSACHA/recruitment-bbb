@@ -17,6 +17,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 5. Logo is a link to the starting page
 6. List of names gets from the API
 
+To do - not enough time:
+Loading states with animations
+
 ## Technologies
 - HTML
 - CSS - Flex, Grid
