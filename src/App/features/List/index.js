@@ -1,8 +1,8 @@
 import {useEffect, useState} from 'react';
 import axios from "axios";
 import {toUpdate} from "../../Core/routes";
-import {StyledLink, StyledList, StyledListItem} from "./styled";
-import {MainWrapper, Wrapper} from "../../common/Wrapper/styled";
+import {StyledButtons, StyledDiv, StyledLink, StyledList, StyledListItem} from "./styled";
+import {MainWrapper, Wrapper} from "../../common/Wrapper";
 import {StyledButton} from "../../common/Button";
 
 const List = () => {
@@ -40,27 +40,31 @@ const List = () => {
             <Wrapper>
                 <StyledList>
                     <StyledListItem header>
-                        <span>Id</span>
-                        <span>First Name</span>
-                        <span>Last Name</span>
-                        <span>Update</span>
-                        <span>Delete</span>
+                        <StyledDiv>Id</StyledDiv>
+                        <StyledDiv>First Name</StyledDiv>
+                        <StyledDiv>Last Name</StyledDiv>
+                        <StyledButtons>
+                            <StyledDiv>Update</StyledDiv>
+                            <StyledDiv>Delete</StyledDiv>
+                        </StyledButtons>
                     </StyledListItem>
                     {APIData.map((data) => {
                         return (
                             <StyledListItem key={data.id}>
-                                <span>{data.id}</span>
-                                <span>{data.firstName}</span>
-                                <span>{data.lastName}</span>
-                                <StyledLink to={toUpdate}>
-                                    <span>
-                                        <StyledButton onClick={() => setData(data)}>Update</StyledButton>
-                                    </span>
-                                </StyledLink>
-                                <span>
-                                <StyledButton
-                                    onClick={() => onDelete(data.id)}>Delete</StyledButton>
-                                </span>
+                                <StyledDiv>{data.id}</StyledDiv>
+                                <StyledDiv>{data.firstName}</StyledDiv>
+                                <StyledDiv>{data.lastName}</StyledDiv>
+                                <StyledButtons>
+                                    <StyledLink to={toUpdate}>
+                                        <StyledDiv>
+                                            <StyledButton onClick={() => setData(data)}>Update</StyledButton>
+                                        </StyledDiv>
+                                    </StyledLink>
+                                    <StyledDiv>
+                                        <StyledButton
+                                            onClick={() => onDelete(data.id)}>Delete</StyledButton>
+                                    </StyledDiv>
+                                </StyledButtons>
                             </StyledListItem>
                         )
                     })}
