@@ -1,14 +1,23 @@
+const breakpoint = {
+    s: 420,
+    m: 768,
+    l: 1024,
+    xl: 1440,
+}
+
 export const theme = {
+    breakpoint,
     color: {
+        mainBackgroundColor: "#282c34",
         mainText: "#252525",
-        slateGray: "#6e7e91",
+        secondText: "#6e7e91",
+        navigationText: "#FFFFFF",
         dividerBackground: "#d1d5da4d",
-        mainBackgroundColor: "#FBFBFE",
-        white: "#FFFFFF",
+        sectionBackgroundColor: "#FFFFFF",
         buttonBackground: "#0366D6",
         buttonText: "#FFFFFF",
-        shadow: "#090A3308",
         borderOnHover: "#0366D633",
-        switcherBackground: "#e5e5e5",
+        listOnHover: "#e5e5e5",
+        borderOnInput: "#FF0000",
     },
 }
