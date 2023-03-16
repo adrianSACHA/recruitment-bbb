@@ -2,7 +2,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 ## Table of content
 1. Demo
-1. Preview
 1. Description
 1. Technologies
 1. Getting started
