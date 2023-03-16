@@ -1,4 +1,4 @@
-import styled, {css} from "styled-components";
+import styled from "styled-components";
 
 export const StyledButton = styled.button`
   display: flex;
@@ -22,7 +22,7 @@ export const StyledButton = styled.button`
       -2px -2px 0px #8cc2ff;
   }
   &:active {
-    box-shadow: inset 0px 2px 0px #14462033;
+    box-shadow: inset 0 2px 0 #14462033;
   }
   @media (max-width: 420px) {
     display: flex;
