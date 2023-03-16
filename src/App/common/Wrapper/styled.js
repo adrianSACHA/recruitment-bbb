@@ -17,7 +17,7 @@ export const Wrapper = styled.div`
 `;
 
 export const Header = styled.h2`
-  padding: 20px 0px;
+  padding: 20px 0;
   margin: 0;
   font-size: 20px;
 `;
