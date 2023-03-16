@@ -2,7 +2,7 @@ import {useRef, useState} from 'react';
 import axios from "axios";
 import {useNavigate} from "react-router-dom";
 import {toList} from "../../Core/routes";
-import {MainWrapper, Wrapper} from "../../common/Wrapper/styled";
+import {MainWrapper, Wrapper} from "../../common/Wrapper";
 import {ButtonWrapper, Form, Input, Label} from "./styled";
 import {StyledButton} from "../../common/Button";
 
