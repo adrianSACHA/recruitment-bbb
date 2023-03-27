@@ -1,3 +1,3 @@
 export const toCreate = "/create";
-export const toList = "/list";
+export const toList = "/";
 export const toUpdate = "/update";
