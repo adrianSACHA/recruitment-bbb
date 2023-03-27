@@ -7,7 +7,7 @@ import Update from "../features/Update";
 
 function App() {
     return (
-            <Router basename="/">
+            <Router basename="/recruitment-bbb">
                 <Navigation/>
                 <Routes>
                     <Route path="/" element={<List/>}/>
