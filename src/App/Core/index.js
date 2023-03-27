@@ -14,13 +14,13 @@ function App() {
         <ThemeProvider theme={theme}>
             <Normalize/>
             <GlobalStyle/>
-            <Router basename="/recruitment-bbb">
+            <Router>
                 <Navigation/>
                 <Routes>
-                    <Route path={toList} element={<List/>}/>
-                    <Route path={toCreate} element={<Create/>}/>
-                    <Route path={toUpdate} element={<Update/>}/>
-                    <Route path="/" element={<Navigate replace to={toList}/>}/>
+                    <Route path="/" element={<List/>} />
+                    <Route path={toCreate} element={<Create/>} />
+                    <Route path={toUpdate} element={<Update/>} />
+                    <Route path={toList} element={<List/>} />
                 </Routes>
             </Router>
         </ThemeProvider>
