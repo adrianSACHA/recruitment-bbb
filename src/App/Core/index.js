@@ -1,5 +1,5 @@
 import {Navigation} from "../common/Navigation";
-import {BrowserRouter as Router, Navigate, Route, Routes} from "react-router-dom";
+import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import {toCreate, toList, toUpdate} from "./routes";
 import List from "../features/List";
 import Create from "../features/Create";
