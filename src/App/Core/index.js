@@ -17,10 +17,10 @@ function App() {
             <Router>
                 <Navigation/>
                 <Routes>
-                    <Route path="/" element={<List/>} />
-                    <Route path={toCreate} element={<Create/>} />
-                    <Route path={toUpdate} element={<Update/>} />
-                    <Route path={toList} element={<List/>} />
+                    <Route path="/" element={<List/>}/>
+                    <Route path={toCreate} element={<Create/>}/>
+                    <Route path={toUpdate} element={<Update/>}/>
+                    <Route path={toList} element={<List/>}/>
                 </Routes>
             </Router>
         </ThemeProvider>
