@@ -2,7 +2,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 ## Table of content
 1. Demo
-1. Preview
 1. Description
 1. Technologies
 1. Getting started
@@ -17,6 +16,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 4. Clicking on the button Add you can add new person to the list
 5. Logo is a link to the starting page
 6. List of names gets from the API
+
+To do - not enough time:
+Loading states with animations
 
 ## Technologies
 - HTML
