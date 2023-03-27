@@ -1,5 +1,5 @@
 import {Navigation} from "../common/Navigation";
-import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
+import {BrowserRouter as Router, HashRouter, Route, Routes} from "react-router-dom";
 import {toCreate, toList, toUpdate} from "./routes";
 import List from "../features/List";
 import Create from "../features/Create";
@@ -7,7 +7,7 @@ import Update from "../features/Update";
 
 function App() {
     return (
-            <Router basename={process.env.PUBLIC_URL}>
+            <HashRouter>
                 <Navigation/>
                 <Routes>
                     <Route path="/" element={<List/>}/>
@@ -15,7 +15,7 @@ function App() {
                     <Route path={toUpdate} element={<Update/>}/>
                     <Route path={toList} element={<List/>}/>
                 </Routes>
-            </Router>
+            </HashRouter>
     );
 }
 
