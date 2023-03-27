@@ -7,7 +7,7 @@ import Update from "../features/Update";
 
 function App() {
     return (
-            <Router basename="/recruitment-bbb">
+            <Router basename={process.env.PUBLIC_URL}>
                 <Navigation/>
                 <Routes>
                     <Route path="/" element={<List/>}/>
