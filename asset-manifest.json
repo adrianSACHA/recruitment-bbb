@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.js": "/recruitment-bbb/static/js/main.d7fdaff9.js",
+    "main.js": "/recruitment-bbb/static/js/main.d3dc2cc4.js",
     "static/js/787.6dfb4641.chunk.js": "/recruitment-bbb/static/js/787.6dfb4641.chunk.js",
     "index.html": "/recruitment-bbb/index.html",
-    "main.d7fdaff9.js.map": "/recruitment-bbb/static/js/main.d7fdaff9.js.map",
+    "main.d3dc2cc4.js.map": "/recruitment-bbb/static/js/main.d3dc2cc4.js.map",
     "787.6dfb4641.chunk.js.map": "/recruitment-bbb/static/js/787.6dfb4641.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.d7fdaff9.js"
+    "static/js/main.d3dc2cc4.js"
   ]
 }
