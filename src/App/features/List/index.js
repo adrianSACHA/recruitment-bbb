@@ -13,6 +13,8 @@ import {
 import { MainWrapper, Wrapper } from "../../common/Wrapper";
 import { StyledButton } from "../../common/Button";
 
+const API_KEY = "641217e8f9fe8122ae1c80a3.mockapi.io";
+
 const List = () => {
   const [APIData, setAPIData] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
@@ -21,7 +23,7 @@ const List = () => {
   useEffect(() => {
     setIsLoading(true);
     axios
-      .get(`https://641217e8f9fe8122ae1c80a3.mockapi.io/fakeData`)
+      .get(`https://${API_KEY}/fakeData`)
       .then((response) => {
         setAPIData(response.data);
         setIsLoading(false);
@@ -44,7 +46,7 @@ const List = () => {
   const getData = () => {
     setIsLoading(true);
     axios
-      .get(`https://641217e8f9fe8122ae1c80a3.mockapi.io/fakeData`)
+      .get(`https://${API_KEY}/fakeData`)
       .then((getData) => {
         setAPIData(getData.data);
         setIsLoading(false);
@@ -60,7 +62,7 @@ const List = () => {
   const onDelete = (id) => {
     setIsLoading(true);
     axios
-      .delete(`https://641217e8f9fe8122ae1c80a3.mockapi.io/fakeData/${id}`)
+      .delete(`https://${API_KEY}/fakeData/${id}`)
       .then(() => {
         getData();
       })
