@@ -48,6 +48,7 @@ export const StyledDiv = styled.div`
 export const StyledButtons = styled.div`
   display: flex;
   gap: 10px;
+
   @media (max-width: ${({ theme }) => theme.breakpoint.s}px) {
     grid-column: span 3;
     display: flex;
@@ -67,6 +68,10 @@ export const Loading = styled(Elipse)`
   justify-content: center;
   align-items: center;
   animation: ${rotation} 1.3s linear infinite;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.s}px) {
+    width: 100px;
+  }
 `;
 
 export const ErrorMessage = styled.div`
