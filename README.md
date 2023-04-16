@@ -1,6 +1,3 @@
-To do list
-Changing elipsę on s resolution
-
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 ## Table of content
 1. Demo
@@ -19,8 +16,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 5. Logo is a link to the starting page
 6. List of names gets from the API
 
-To do - not enough time:
-Loading states with animations
 
 ## Technologies
 - HTML
