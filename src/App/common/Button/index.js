@@ -6,10 +6,10 @@ export const StyledButton = styled.button`
   align-items: center;
   padding: 12px 16px;
   width: fit-content;
-  background: ${({theme}) => theme.color.buttonBackground};
-  border: 1px solid ${({theme}) => theme.color.dividerBackground};
+  background: ${({ theme }) => theme.color.buttonBackground};
+  border: 1px solid ${({ theme }) => theme.color.dividerBackground};
   border-radius: 4px;
-  color: ${({theme}) => theme.color.buttonText};
+  color: ${({ theme }) => theme.color.buttonText};
   font-weight: 600;
   font-size: 12px;
   text-decoration: none;
@@ -25,8 +25,9 @@ export const StyledButton = styled.button`
     box-shadow: inset 0 2px 0 #14462033;
   }
 
-  @media (max-width: ${({theme}) => theme.breakpoint.s}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.s}px) {
     font-size: 10px;
+    padding: 6px 8px;
   }
 `;
 
